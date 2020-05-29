@@ -1,0 +1,23 @@
+﻿@page "/"
+
+<button @onclick="@(()=>GenerarContraseña())">Generar</button>
+<br />
+<text>@contraseña</text>
+
+
+@code{
+
+    public int MaxLength { get; set; } = -1;
+    public int NumPasswords { get; set; } = 3;
+
+    string contraseña = "";
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+    }
+
+    void GenerarContraseña()
+    {
+        contraseña = Contraseña.GetRandom(NumPasswords, MaxLength);
+    }
+}

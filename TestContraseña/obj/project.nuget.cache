@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "d+0HPw/PFHtS1JiRHhhyqlh1DqH56gJIRUM2S1Iwr5rnlFHLFFpAdkGHb/XTGDT0rqJLzDN25WIayYZz78vGDQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tetra\\source\\repos\\GeneradorContraseña\\TestContraseña\\TestContraseña.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tetra\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.2\\microsoft.aspnetcore.authorization.3.1.2.nupkg.sha512",
+    "C:\\Users\\tetra\\.nuget\\packages\\microsoft.aspnetcore.blazor.httpclient\\3.2.0-preview2.20160.5\\microsoft.aspnetcore.blazor.httpclient.3.2.0-preview2.20160.5.nupkg.sha512",
+    "C:\\Users\\tetra\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.2\\microsoft.aspnetcore.components.3.1.2.nupkg.sha512",
+    "C:\\Users\\tetra\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\3.1.2\\microsoft.aspnetcore.components.analyzers.3.1.2.nupkg.sha512",
+    "C:\\Users\\tetra\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\3.1.2\\microsoft.aspnetcore.components.forms.3.1.2.nupkg.sha512",
+    "C:\\Users\\tetra\\.nuget\\packages\\microsoft.aspnetcore.components.web\\3.1.2\\microsoft.aspnetcore.components.web.3.1.2.nupkg.sha512",
+    "C:\\Users\\tetra\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\3.2.0-preview2.20160.5\\microsoft.aspnetcore.components.webassembly.3.2.0-preview2.20160.5.nupkg.sha512",
+    "C:\\Users\\tetra\\.nuget\\packages\\microsoft.aspnetcore.metadata\\3.1.2\\microsoft.aspnetcore.metadata.3.1.2.nupkg.sha512",
+    "C:\\Users\\tetra\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.2\\microsoft.extensions.configuration.3.1.2.nupkg.sha512",
+    "C:\\Users\\tetra\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.2\\microsoft.extensions.configuration.abstractions.3.1.2.nupkg.sha512",
+    "C:\\Users\\tetra\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.2\\microsoft.extensions.dependencyinjection.3.1.2.nupkg.sha512",
+    "C:\\Users\\tetra\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.2\\microsoft.extensions.dependencyinjection.abstractions.3.1.2.nupkg.sha512",
+    "C:\\Users\\tetra\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.2\\microsoft.extensions.logging.abstractions.3.1.2.nupkg.sha512",
+    "C:\\Users\\tetra\\.nuget\\packages\\microsoft.extensions.options\\3.1.2\\microsoft.extensions.options.3.1.2.nupkg.sha512",
+    "C:\\Users\\tetra\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.2\\microsoft.extensions.primitives.3.1.2.nupkg.sha512",
+    "C:\\Users\\tetra\\.nuget\\packages\\microsoft.jsinterop\\3.1.2\\microsoft.jsinterop.3.1.2.nupkg.sha512",
+    "C:\\Users\\tetra\\.nuget\\packages\\microsoft.jsinterop.webassembly\\3.2.0-preview2.20160.5\\microsoft.jsinterop.webassembly.3.2.0-preview2.20160.5.nupkg.sha512",
+    "C:\\Users\\tetra\\.nuget\\packages\\system.text.json\\4.7.1\\system.text.json.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
