@@ -61,64 +61,12 @@ namespace GeneradorContraseña.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a A
-        ///A-
-        ///Aarónico
-        ///Aaronita
-        ///Aba
-        ///Ababa
-        ///Ababillarse
-        ///Ababol
-        ///Abacá
-        ///Abacal
-        ///Abacalero
-        ///Abacería
-        ///Abacero
-        ///Abachar
-        ///Abacial
-        ///Ábaco
-        ///Abacora
-        ///Abacorar
-        ///Abad
-        ///Abada
-        ///Abadejo
-        ///Abadengo
-        ///Abadernar
-        ///Abadesa
-        ///Abadí
-        ///Abadía
-        ///Abadiado
-        ///Abadiato
-        ///Ab aeterno
-        ///Abajadero
-        ///Abajamiento
-        ///Abajar
-        ///Abajeño
-        ///Abajera
-        ///Abajo
-        ///Abakuá
-        ///Abalada
-        ///Abalanzar
-        ///Abalar
-        ///Abalaustrado
-        ///Abalconado
-        ///Abaldonadamente
-        ///Abaldonamiento
-        ///Abaldonar
-        ///Abaleador
-        ///Abaleadura
-        ///Abalear
-        ///Abaleo
-        ///Abalizamiento
-        ///Abalizar
-        ///Aballar
-        ///Aballestar
-        ///Abalorio
-        ///Abalu [resto de la cadena truncado]&quot;;.
+        ///   Busca un recurso adaptado de tipo System.Byte[].
         /// </summary>
-        public static string Palabras {
+        public static byte[] PalabrasDic {
             get {
-                return ResourceManager.GetString("Palabras", resourceCulture);
+                object obj = ResourceManager.GetObject("PalabrasDic", resourceCulture);
+                return ((byte[])(obj));
             }
         }
     }

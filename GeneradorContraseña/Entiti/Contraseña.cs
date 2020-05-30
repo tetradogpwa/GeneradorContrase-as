@@ -1,4 +1,5 @@
-﻿using GeneradorContraseña.Properties;
+﻿using Gabriel.Cat.S.Binaris;
+using GeneradorContraseña.Properties;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -11,23 +12,13 @@ namespace GeneradorContraseña.Entiti
     public class Contraseña
     {
         static Random r;
-       static SortedList<int, string> Dictionary;
+        static GeneradorArchivoFacilDeLeer.Reader<string> reader;
         static Contraseña()
         {
-            string linea;
-            bool correcto;
-            StringReader stringReader = new StringReader(Resources.Palabras);
-            int pos = 0;
-            r = new Random();
-            Dictionary = new SortedList<int, string>();
-            do
-            {
-                linea = stringReader.ReadLine();
-                correcto = !Equals(linea, default);
-                if (correcto)
-                     Dictionary.Add(pos++, linea);
 
-            } while (correcto);
+            r = new Random();
+            reader = new GeneradorArchivoFacilDeLeer.Reader<string>(Resources.PalabrasDic,ElementoBinario.ElementoTipoAceptado(Gabriel.Cat.S.Utilitats.Serializar.TiposAceptados.String));
+
 
         }
         public static string IGetRandom(int numPasswords=3)
@@ -35,7 +26,7 @@ namespace GeneradorContraseña.Entiti
             StringBuilder str = new StringBuilder();
 
             for (int i = 0; i < numPasswords; i++)
-                str.Append(Dictionary[r.Next(Dictionary.Count)]);
+                str.Append(reader[r.Next(reader.Count)]);
             return str.ToString();
         }
         public static string GetRandom(int numPasswords = 3,int maxLength=-1)
@@ -57,7 +48,6 @@ namespace GeneradorContraseña.Entiti
             return password;
         }
         public static async Task Init() { }
-        public static string[] GetValues() => Dictionary.Values.ToArray();
     }
 
 }

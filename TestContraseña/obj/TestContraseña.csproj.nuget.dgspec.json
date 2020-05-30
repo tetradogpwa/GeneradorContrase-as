@@ -42,23 +42,27 @@
       "frameworks": {
         "netstandard2.1": {
           "dependencies": {
+            "GeneradorArchivoFacilDeLeer": {
+              "target": "Package",
+              "version": "[1.0.4, )"
+            },
             "Microsoft.AspNetCore.Blazor.HttpClient": {
               "target": "Package",
               "version": "[3.2.0-preview2.20160.5, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
-              "version": "[3.2.0-preview2.20160.5, )"
+              "version": "[3.2.0, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly.Build": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.2.0-preview2.20160.5, )"
+              "version": "[3.2.0, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.2.0-preview2.20160.5, )"
+              "version": "[3.2.0, )"
             }
           },
           "imports": [
