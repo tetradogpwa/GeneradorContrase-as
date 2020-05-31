@@ -51,7 +51,26 @@
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
 
-    <script src="_framework/blazor.webassembly.js" type="text/javascript"></script>
+    <script src="_framework/blazor.webassembly.js" type="text/javascript" autostart="false" ></script>
+    <script>
+        Blazor.start({
+            loadBootResource: function (type, name, defaultUri, integrity) {
+                console.log(`Will load '${type}' with name '${name}' from URI '${defaultUri}' and integrity '${integrity}'`);
+    
+                switch (type) {
+                    case 'dotnetjs':
+                    case 'dotnetwasm':
+                    case 'timezonedata':
+                        return `https://mycdn.external.cdn/blazorwebassembly/3.2.0-rc1/${name}`;
+                }
+    
+                // Other types are 'assembly' and 'pdb' but you probably wouldn't want to fetch those from a CDN as they would be custom-linked for your app
+                // By returning undefined for other types, we let the framework use its normal strategy for those types
+            }
+        });
+    </script>
+
+
 </body>
 
 </html>
