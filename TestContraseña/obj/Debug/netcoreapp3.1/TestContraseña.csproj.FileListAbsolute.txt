@@ -49,4 +49,3 @@ C:\Users\tetra\source\repos\GeneradorContraseña\TestContraseña\bin\Debug\netco
 C:\Users\tetra\source\repos\GeneradorContraseña\TestContraseña\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\tetra\source\repos\GeneradorContraseña\TestContraseña\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\tetra\source\repos\GeneradorContraseña\TestContraseña\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Users\tetra\source\repos\GeneradorContraseña\TestContraseña\bin\Debug\netcoreapp3.1\GeneradorArchivoFacilDeLeer.pdb
