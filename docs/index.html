@@ -55,13 +55,17 @@
     <script>
     Blazor.start({
         loadBootResource: function (type, name, defaultUri, integrity) {
-            // Adds a custom HTTP header to the outbound requests
-            // To retain the default integrity checking behavior, it's necessary to pass through the 'integrity' parameter
-            return fetch(defaultUri, { 
-                cache: 'no-cache',
-                integrity: integrity,
-                headers: { 'MyCustomHeader': 'My custom value' }
-            });
+            console.log(`Will load '${type}' with name '${name}' from URI '${defaultUri}' and integrity '${integrity}'`);
+
+            switch (type) {
+                case 'dotnetjs':
+                case 'dotnetwasm':
+                case 'timezonedata':
+                    return `https://mycdn.external.cdn/blazorwebassembly/3.2.0-rc1/${name}`;
+            }
+
+            // Other types are 'assembly' and 'pdb' but you probably wouldn't want to fetch those from a CDN as they would be custom-linked for your app
+            // By returning undefined for other types, we let the framework use its normal strategy for those types
         }
     });
     </script>
