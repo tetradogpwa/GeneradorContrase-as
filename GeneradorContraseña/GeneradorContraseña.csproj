@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Gabriel.Cat.Blazor.Client" Version="1.0.0-preview3" />
     <PackageReference Include="GeneradorArchivoFacilDeLeer" Version="1.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="3.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Build" Version="3.2.0" PrivateAssets="all" />

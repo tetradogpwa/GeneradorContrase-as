@@ -31,7 +31,7 @@ namespace GeneradorContraseña.Entiti
         }
         public static string GetRandom(int numPasswords = 3,int maxLength=-1)
         {
-            const int MAX = 100 * 1000;
+            const int MAX = 1 * 1000;
             int intento = 0;
             string password;
             if (maxLength > 0)

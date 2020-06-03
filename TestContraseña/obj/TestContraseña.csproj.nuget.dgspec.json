@@ -42,6 +42,10 @@
       "frameworks": {
         "netstandard2.1": {
           "dependencies": {
+            "Gabriel.Cat.Blazor.Client": {
+              "target": "Package",
+              "version": "[1.0.0-preview3, )"
+            },
             "GeneradorArchivoFacilDeLeer": {
               "target": "Package",
               "version": "[1.0.4, )"

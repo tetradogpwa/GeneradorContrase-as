@@ -1,12 +1,40 @@
 ﻿@page "/"
 @inherits LayoutComponentBase
 
-<div class="main">
-    <button @onclick="@(()=>GenerarContraseña())">Generar</button>
-    <br />
-    <text>@contraseña</text>
+    <div class="main">
+        <button @onclick="@(()=>GenerarContraseña())">Generar</button>
+        <br />
+        <table>
+            <colgroup>
+                <col/>
+                <col/></colgroup>
+                <colgroup>
+                    <col/>
+                    <col/></colgroup>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <text>Passwords</text>
+                            </td>
+                            <td>
+                                <NumberBox InitValue="@NumPasswords" OnChange="@((num)=>SetNumPasswords(Convert.ToInt32(num)))" />
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <text>Max Length</text>
+                            </td>
+                            <td>
+                                <NumberBox InitValue="@MaxLength" OnChange="@((num)=>SetMaxLength(Convert.ToInt32(num)))" />
+                            </td>
+                        </tr>
+                    </tbody>
+</table>
+        <text>@contraseña</text>
 
-</div>
+    </div>
 @code{
 
     public int MaxLength { get; set; } = -1;
@@ -22,5 +50,15 @@
     void GenerarContraseña()
     {
         contraseña = Contraseña.GetRandom(NumPasswords, MaxLength);
+    }
+    void SetNumPasswords(int numPasswords)
+    {
+        if(numPasswords>0)
+            NumPasswords = numPasswords;
+    }
+    void SetMaxLength(int maxLength)
+    {
+        if (maxLength > 0)
+            MaxLength = maxLength;
     }
 }
